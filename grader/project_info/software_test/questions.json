@@ -1,0 +1,14 @@
+{"questions": [
+    {"question":  "Read the application details again. What concerns might you have right off the bat?"},
+    {"question":  "What is the difference between test cases and test cycles (aka “test runs”)?"},
+    {"question":  "What things should be considered when writing test cases?"},
+    {"question":  "What kind of documentation would you expect to come out of this project (e.g.\ntraining docs, change requests)?"},
+    {"question":  "If an online/cloud-based project management solution is being used, what\nconcerns might you have regarding that?"},
+    {"question":  "You find out that a couple of developers have full access in Dev, QA and Prod. Is\nthis a security problem? Why or why not? Is it a compliance problem? Why or why\nnot?"},
+    {"question":  "What is regression testing and why is it important?"},
+    {"question":  "What are the pros and cons of regression testing?"},
+    {"question":  " What are some “political” concerns that could arise if issues are found that could\ndelay the project?"},
+    {"question":  "What are the two most common project management methodologies? What are\nthe main differences between them?"},
+    {"question":  "In the middle of QA testing, management requested that another feature be\nincluded in the application. What is this called, and how should the project team\nevaluate it?"},
+    {"question":  "When the application went live, some bugs were found. At what stage of the\nprocess should the bugs have been caught and fixed? Why?"}
+]}

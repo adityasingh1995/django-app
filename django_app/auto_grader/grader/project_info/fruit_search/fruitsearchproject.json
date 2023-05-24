@@ -1,0 +1,46 @@
+{
+"Autofill Draft": "In this project, you'll plan and build an Autofill Search Bar for various types of fruit! You may be familiar with autofill from a search engine like Google. When you type anything into Google, a drop-down appears with suggestions for what you may want to search for. If you click on one of these suggestions, it populates the search bar with that suggestion. Building search bars like this is a common task for front-end engineers. You'll be building a small-scale search bar which suggests various fruits based on user input. We'll provide a list of fruits and a mock-up of how the page should look. You'll do the rest. If a user's typed input is contained anywhere in one of the fruits in the list, then a drop-down will appear containing all the fruits that match. As a user continues to add letters to their input, new dropdowns will populate. When a user clicks on one of these options, it will populate the search bar.",
+  "steps": [
+    {
+      "step": "Step One",
+      "description": "Planning Before you start working on this, take a few minutes to think about how you would approach building a search bar like this using HTML, CSS, and JavaScript. Jot down your thoughts on a piece of paper or a Google Doc. Don't worry, no one else will see these notes. Ask yourself:\\n- What HTML would you use for the search bar? How about the drop-down, the search button, and the filler text that will appear on the page?\\n- What CSS would you use to create the color gradient on the page?\\n- What type of JavaScript event listeners would you need to add to refresh the dropdown as a user types?\\n- How would you populate the search bar with an option from the dropdown list? What event would trigger this action?\\n- How would you structure your functions?"
+    },
+    {
+      "step": "Step Two",
+      "description": "Read the Starter Code We have provided a small amount of starter code in this exercise. Read through it. Make sure you understand what everything does prior to starting this project."
+    },
+    {
+      "step": "Step Three",
+      "description": "Create a Search Bar On Screen Create a search bar using HTML that accepts user input on the screen. Don't worry about styling it until the end of the project."
+    },
+    {
+      "step": "Step Four",
+      "description": "Add Placeholder Text Into The Search Bar Whenever there is no user input in the search bar, it should populate with the string 'Search fruit'."
+    },
+    {
+      "step": "Step Five",
+      "description": "Add An Event Listener For Key Strokes Create an event listener in JavaScript that will trigger when a user types."
+    },
+    {
+      "step": "Step Six",
+      "description": "Filter The List Based On User Input Write a function called search() that will trigger based on the event listener you created in the last step. This function will return a list called 'results'. It filters the fruit list based on whatever user input is in the search box. If the string in the user input appears ANYWHERE in the fruit name, it should be added to the 'results' list. It should not matter if a user types upper or lower case letters. That means if a user types 'ap', both 'Apple' and 'Grape' will appear in the 'results' list."
+    },
+    {
+      "step": "Step Seven",
+      "description": "Display The Results List As A Drop Down Take the list created in the previous step and display it as a drop-down list below the search bar."
+    },
+    {
+      "step": "Step Eight",
+      "description": "Highlight the suggestion below a user's cursor Add an event listener to trigger whenever a user hovers over one of the suggestions in the drop-down list. Write a function that highlights the suggestion. Attach this function to the event listener."
+    },
+    {
+      "step": "Step Nine",
+      "description": "Populate the search box with a user's selected suggestion When a user clicks on a suggestion, that string should fill the Search Bar. Add an event listener that triggers when a user clicks. Write a function, useSuggestion(), to populate the Search Bar with the selected suggestion. Add this function to the event listener."
+    },
+    {
+      "step": "Step Ten",
+      "description": "Style the Page Add a linear-gradient CSS styling to the page that matches the mock-up. This should style both the background and the search bar."
+    }
+  ]
+}
+

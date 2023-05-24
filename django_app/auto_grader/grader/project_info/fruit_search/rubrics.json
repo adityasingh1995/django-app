@@ -1,0 +1,25 @@
+{
+  "Criteria": {
+    "Meets Expectations": [
+      "Completion",
+      "Process & Understanding",
+      "Presentation"
+    ]
+  },
+  "Completion": [
+    "Contains Search Bar",
+    "Search Bar Has Filler Text \"Search fruit + emoji\" which goes away when typing starts, and reappears when the bar is empty",
+    "When someone types, a drop down list appears with all fruit which contains the string in the search bar",
+    "Each keystroke, this drop down is refreshed",
+    "An item in the dropdown is highlighted when a user hovers over it",
+    "When someone clicks on an item in the drop down, the search bar populates with the item"
+  ],
+  "Process & Understanding": [
+    "Demonstrates understanding of JavaScript, HTML, and CSS"
+  ],
+  "Presentation": [
+    "Solution is submitted",
+    "CSS is styled in an orange gradient",
+    "Code is clean and professional looking"
+  ]
+}

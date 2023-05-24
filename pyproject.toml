@@ -1,0 +1,10 @@
+[project]
+name = "auto_grader"
+version = "1.0"
+dependencies = [
+    "python=^3.7",
+    "django",
+    "gunicorn",
+    "openai",
+    "python-dotenv",
+]

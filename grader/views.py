@@ -19,7 +19,7 @@ def generate_prompt(project_name, project_info):
 
 @csrf_exempt
 def evaluate_project(request, project_name):
-    valid_projects = {'fruit_search'}
+    valid_projects = {'fruit_search', 'software_test'}
 
     if request.method != 'POST' or project_name not in valid_projects:
         return HttpResponseNotFound("resource not found")

@@ -67,9 +67,6 @@ def get_project_info(project_name):
         ```
         {starter_style_css}
         ```
-
-        Based on the above project details, evaluation criteria and code submitted by student, Share exact details of
-        where the code would or would not meet expectations as per the rubrics shared.
         """
 
         # Following files are an example of correct solution
@@ -94,6 +91,26 @@ def get_project_info(project_name):
         # where the code would or would not meet expectations as per the rubrics shared.
         # """
 
+        return context_prompt
+
+    if project_name == 'software_test':
+        detail = json.dumps(json.load(open(f'{project_dir}/softwaretestproject.json')))
+        questions = json.dumps(json.load(open(f'{project_dir}/questions.json')))
+        context_prompt = f"""
+        You are a evaluator who evaluates project submission submitted by students of a cyber security engineering course
+        Here are the project details demarcated by triple backticks:
+
+        ```
+        {detail}
+        ```
+        
+        Here are the questions a student is supposed to answer as part of their project submission.
+        
+        ```
+        {questions}
+        ```
+        
+        """
         return context_prompt
 
 
@@ -141,11 +158,36 @@ def get_solution_text(project_name, git_link):
             ```
             {style_file_string}
             ```
-Based on the project rubrics, generate the correct code for this project using the starter code.
-Go through the completion conditions one by one and check if the solution provided by the student 
-meets the criteria by comparing with your generated solution.
-Share exact details of where the code would or would not meet expectations as per the rubrics shared.
-Share the parts of the student's code which do no match with your generated solution    
-"""
+        Based on the project rubrics, generate the correct code for this project using the starter code.
+        Go through the completion conditions one by one and check if the solution provided by the student 
+        meets the criteria by comparing with your generated solution.
+        Share exact details of where the code would or would not meet expectations as per the rubrics shared.
+        Share the parts of the student's code which do no match with your generated solution    
+        """
+
+    if project_name == 'software_test':
+        parsed_url = urlparse.urlparse(git_link)
+        path = parsed_url.path
+
+        raw_path = f'https://raw.githubusercontent.com{path}'
+        raw_path = raw_path.strip('/')
+
+        answer_file_path = '/'.join([raw_path, 'main', 'answer.txt'])
+
+        answer_file_string = requests.get(answer_file_path)
+        answer_file_string = answer_file_string.text
+
+        return f"""
+           Solution submitted by student is as follows 
+
+           answer file demarcated by triple backticks:
+           ```
+           {answer_file_string}
+           ```
+       Based on the project detail, evaluate the answers submitted by the student in the answer.txt file
+       Share the parts of the student's answer do no match the expectation.
+       Share feedback for student on a scale of 1 to 10 where 10 denotes excellent knowledge and 1 denotes poor 
+       knowledge     
+       """
 
 

@@ -184,10 +184,10 @@ def get_solution_text(project_name, git_link):
            ```
            {answer_file_string}
            ```
-       Based on the project detail, evaluate the answers submitted by the student in the answer.txt file
-       Share the parts of the student's answer do no match the expectation.
-       Share feedback for student on a scale of 1 to 10 where 10 denotes excellent knowledge and 1 denotes poor 
-       knowledge     
-       """
+        Based on the project detail, evaluate the answers submitted by the student in the answer.txt file
+        Share the parts of the student's answer do no match the expectation.
+        Share feedback for student for each question on a scale of 1 to 10 where 10 denotes excellent knowledge and 1 
+        denotes poor knowledge     
+        """
 
 

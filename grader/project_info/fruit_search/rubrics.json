@@ -1,11 +1,4 @@
 {
-  "Criteria": {
-    "Meets Expectations": [
-      "Completion",
-      "Process & Understanding",
-      "Presentation"
-    ]
-  },
   "Completion": [
     "Contains Search Bar",
     "Search Bar Has Filler Text \"Search fruit + emoji\" which goes away when typing starts, and reappears when the bar is empty",

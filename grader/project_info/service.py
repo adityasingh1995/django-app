@@ -158,11 +158,10 @@ def get_solution_text(project_name, git_link):
             ```
             {style_file_string}
             ```
-        Based on the project rubrics, generate the correct code for this project using the starter code.
-        Go through the completion conditions one by one and check if the solution provided by the student 
-        meets the criteria by comparing with your generated solution.
-        Share exact details of where the code would or would not meet expectations as per the rubrics shared.
-        Share the parts of the student's code which do no match with your generated solution    
+        follow these steps:
+        1. Based on the project rubrics, generate the correct code for this project using the starter code.
+        2. Go through the completion conditions one by one and check if the solution provided by the student meets the criteria by comparing with your generated solution.
+        3. Share the assessment in the same format as the rubric  
         """
 
     if project_name == 'software_test':

@@ -2,3 +2,4 @@ openai
 django
 python-dotenv
 gunicorn
+django-cors-headers
